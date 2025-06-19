@@ -1,0 +1,31 @@
+1. What is the difference between Git and Github?
+   ✅ Difference Between Git and GitHub:
+   Feature Git GitHub
+   Type Distributed Version Control System (DVCS) Cloud-based Hosting Service for Git Repositories
+   Function Manages code versioning locally on your machine Hosts Git repositories online for collaboration
+   Creator Created by Linus Torvalds in 2005 Launched by Tom Preston-Werner and others in 2008
+   Usage Run via command line (e.g., git init, git commit) Used via web interface or Git command line (git push)
+   Access Works locally, doesn’t need internet to function Requires internet for remote repo access and  
+    collaboration  
+   Collabo-
+   ration Limited to manual file sharing unless using a server Enables team collaboration with pull requests,
+   issues, etc.
+   Hosting Does not host repositories online Hosts Git repositories in the cloud
+
+🔁 Summary:
+Git is the tool for version control.
+GitHub is a platform that uses Git to allow developers to store and collaborate on code online.
+
+2. What is the command that displays the state of the working directory and the staging area?
+
+   git status
+
+3. What is the command to show the history of commit messages?
+
+   git log
+
+4. What is the command to remove a file from the staging area, without deleting the file.
+
+   git restore --staged <filename>
+
+5. What is the purpose of .gitignore within a git repository? (hint: execute the python script)
