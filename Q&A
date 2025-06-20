@@ -29,3 +29,5 @@ GitHub is a platform that uses Git to allow developers to store and collaborate 
    git restore --staged <filename>
 
 5. What is the purpose of .gitignore within a git repository? (hint: execute the python script)
+
+   The gitignore does not track the _pycache_ file created on running the python code as its ignored for git actions.
