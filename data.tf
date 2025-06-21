@@ -8,7 +8,7 @@ data "aws_subnets" "public" {
     values = [data.aws_vpc.selected.id]
   }
   filter {
-    name = "tag:Name"
+    name   = "tag:Name"
     values = ["*public*"]
   }
 }
@@ -18,18 +18,18 @@ data "aws_subnets" "private" {
     values = [data.aws_vpc.selected.id]
   }
   filter {
-    name = "tag:Name"
+    name   = "tag:Name"
     values = ["*private*"]
   }
 }
 
-data aws_ami "latest_amazon_linux" {
+data "aws_ami" "latest_amazon_linux" {
   most_recent = true
 
   owners = ["amazon"]
 
   filter {
-    name = "architecture"
+    name   = "architecture"
     values = ["x86_64"]
   }
 

@@ -1,22 +1,22 @@
 variable "name" {
-  type = string
+  type        = string
   description = "name of the app"
-  default = "vrush-tf-ec2"
+  default     = "vrush-tf-ec2"
 }
 
-variable instance_type {
-  type = string
+variable "instance_type" {
+  type        = string
   description = "EC2 instance type"
-  default = "t2.micro"
+  default     = "t2.micro"
 }
 
 variable "key_name" {
-  type = string
+  type        = string
   description = "SSH key name"
-  default = "ec2-key"
+  default     = "ec2-key"
 }
 
-variable instance_count {
+variable "instance_count" {
   type        = number
   description = "Number of EC2 instances to create"
   default     = 1
@@ -28,14 +28,14 @@ variable "public_key_path" {
   default     = "~/.ssh/ec2-key.pub"
 }
 
-variable "public_subnet"{
-  type = bool
+variable "public_subnet" {
+  type        = bool
   description = "Whether to use a public subnet for the EC2 instance"
-  default = true
+  default     = true
 }
 
 variable "vpc_id" {
-  type = string
+  type        = string
   description = "ID of the VPC to launch instances in"
-  default = "vpc-007578610a8dcae22" # Deafault ID of vrushali-vpc
+  default     = "vpc-007578610a8dcae22" # Deafault ID of vrushali-vpc
 }
