@@ -40,7 +40,7 @@ jobs:
         with:
           soft_fail: false
       - name: Trivy IaC Security Scan
-        uses: aquasecurity/trivy-action@v0.19.0
+        uses: aquasecurity/trivy-action@master
         with:
           scan-type: config
           exit-code: 1
