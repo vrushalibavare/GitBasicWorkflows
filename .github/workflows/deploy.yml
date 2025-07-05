@@ -1,10 +1,5 @@
 name: Terraform Apply
 
-# Trigger the workflow on push events to the main branch
-#on:
-#push:
-#branches:
-#- main
 on:
   workflow_run:
     workflows: ["Terraform Plan"] # Name of your build workflow
